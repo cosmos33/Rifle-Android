@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mm.rifle.demo"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0_rfileDemo"
+
+        android {
+            defaultConfig {
+                ndk {
+                    // 设置支持的SO库架构
+                    abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+                }
+            }
+        }
+
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('123456.keystore')
+            storePassword "123456"
+            keyAlias "123456"
+            keyPassword "123456"
+            v2SigningEnabled true   // android 5.0-8.0，必须用V2，否则会有安全问题
+            v1SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.mm.rifle:core:1.5.9'            // rifle的基础库，包含java崩溃收集，以及核心代码
+    implementation 'com.mm.rifle:native:1.1.0'          // 如果想要监控native崩溃，需要加入这个（so文件）
+
+    /*
+    // 如果编译时出现提示：More than one file was found with OS independent path 'lib/armeabi/libc++_shared.so'
+    // 则用下面这个方式引入NDK
+    implementation ('com.mm.rifle:native:1.1.0') {
+        exclude group: 'com.mm.baseutil', module: 'cpp_shared'
+    }
+    */
+
+}
+
+apply plugin: 'rifle.plugin'
+rifleConfig {
+    enable = true
+    appId = "后台申请的APPID"
+    appKey = "后台申请的APPKEY"
+    versionName = android.defaultConfig.versionName
+    waitingSymbolsUpload = true
+}
