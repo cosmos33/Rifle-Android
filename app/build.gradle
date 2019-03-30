@@ -29,6 +29,14 @@ android {
             v2SigningEnabled true   // android 5.0-8.0，必须用V2，否则会有安全问题
             v1SigningEnabled true
         }
+        debug {
+            storeFile file('123456.keystore')
+            storePassword "123456"
+            keyAlias "123456"
+            keyPassword "123456"
+            v2SigningEnabled true   // android 5.0-8.0，必须用V2，否则会有安全问题
+            v1SigningEnabled true
+        }
     }
 
     buildTypes {
@@ -62,8 +70,7 @@ dependencies {
 apply plugin: 'rifle.plugin'
 rifleConfig {
     enable = true
-    appId = "后台申请的APPID"
-    appKey = "后台申请的APPKEY"
+    appId = "e2670a2e4b44b76adc262e51fc22b8d2"
+    appKey = "cedbf4779e07e1e367294dbe0f086501"
     versionName = android.defaultConfig.versionName
-    waitingSymbolsUpload = true
 }

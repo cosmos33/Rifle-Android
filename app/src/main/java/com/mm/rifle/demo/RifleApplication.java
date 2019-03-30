@@ -13,7 +13,7 @@ public class RifleApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Rifle.init(this, "后台申请的APPID", BuildConfig.DEBUG);
+        Rifle.init(this, "e2670a2e4b44b76adc262e51fc22b8d2", BuildConfig.DEBUG);
 
     }
 }
