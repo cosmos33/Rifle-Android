@@ -54,7 +54,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.mm.rifle:core:1.5.9'            // rifle的基础库，包含java崩溃收集，以及核心代码
+    implementation 'com.mm.rifle:core:1.6.3'            // rifle的基础库，包含java崩溃收集，以及核心代码
     implementation 'com.mm.rifle:native:1.1.0'          // 如果想要监控native崩溃，需要加入这个（so文件）
 
     /*
