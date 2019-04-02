@@ -29,7 +29,7 @@ buildscript {
 }
 ```
 
-![maven_1](../../../assets/images/android/maven_1.png)
+![maven_1](./images/maven_1.png)
 
 ### 只集成SDK
 在Module的build.gradle文件中添加依赖和属性配置：
@@ -62,7 +62,7 @@ android {
     }
 }
 ```
-![dependencies](../../../assets/images/android/dependencies.png)
+![dependencies](./images/dependencies.png)
 
 #### 集成NDK时可能碰到的情况
 - **情况一：**
@@ -122,7 +122,7 @@ buildscript {
 }
 ```
 
-![plugin_maven](../../../assets/images/android/plugin_maven.png)
+![plugin_maven](./images/plugin_maven.png)
 
 ### 应用插件
 在Module的build.gradle文件中应用插件：
@@ -141,10 +141,10 @@ rifleConfig {
 }
 ```
 
-![plugin_apply](../../../assets/images/android/plugin_apply.png)
+![plugin_apply](./images/plugin_apply.png)
 
 带符号表的so文件，需要放在Module下的`src/main/obj`下，对应架构放在对应架构目录下，当然，开发者可以通过上面的`symbolsDir`属性来修改此路径，默认放置如下：
-![symbolsFile](../../../assets/images/android/symbolsFile.png)
+![symbolsFile](./images/symbolsFile.png)
 
 ### 使用上传符号so脚本
 
