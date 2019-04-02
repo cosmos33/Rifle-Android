@@ -62,13 +62,13 @@ UserStrategy userStrategy = new UserStrategy.Builder()
             }
             
             /**
-			     * 提交crash成功
-			     * @param versionCode app编号
-			     */
-			    public void onUploadSuccess(String versionCode) {
-						super.onUploadResponse(uploadType);
-                 // 提交crash成功
-			    }
+             * 提交crash成功
+             * @param versionCode app编号
+             */
+            public void onUploadSuccess(String versionCode) {
+                    super.onUploadResponse(uploadType);
+             // 提交crash成功
+            }
 
             @Override
             public void onCrashHandle(long costTimeMillis) {
