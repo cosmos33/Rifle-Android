@@ -7,11 +7,11 @@
 
 如果只收集`Java Crash`，引入SDK即可：
 
-- com.mm.rifle:core
+- com.cosmos.rifle:core
 
 如果需要收集`Native Crash` 则还需要引入NDK（so库）：
 
-- com.mm.rifle:native
+- com.cosmos.rifle:native
 
 > 引入NDK，必须先引入SDK
 
@@ -24,7 +24,7 @@
 buildscript {
     repositories {
         // 添加Rifle所在仓库
-         maven { url 'https://dl.bintray.com/wangduanqing/cosmos/' }
+         maven { url 'https://cosmos1602.bintray.com/cosmos/' }
     }
 }
 ```
@@ -36,7 +36,7 @@ buildscript {
 
 ```
 dependencies {
-    compile 'com.mm.rifle:core:1.6.3'
+    compile 'com.cosmos.rifle:core:1.6.3'
 }
 ```
 
@@ -45,8 +45,8 @@ dependencies {
 
 ```
 dependencies {
-    compile 'com.mm.rifle:core:1.6.3'
-    compile 'com.mm.rifle:native:1.1.0'     // 收集native crash需要用到的NDK
+    compile 'com.cosmos.rifle:core:1.6.3'
+    compile 'com.cosmos.rifle:native:1.1.0'     // 收集native crash需要用到的NDK
 }
 ```
 
@@ -83,8 +83,8 @@ android {
 则对NDK的依赖方式改成如下格式：
 
 ```
-implementation ('com.mm.rifle:native:1.1.0') {
-    exclude group: 'com.mm.baseutil', module: 'cpp_shared'
+implementation ('com.cosmos.rifle:native:1.1.0') {
+    exclude group: 'com.cosmos.baseutil', module: 'cpp_shared'
 }
 ```
 
@@ -106,7 +106,7 @@ implementation ('com.mm.rifle:native:1.1.0') {
 allprojects {
     repositories {
         // 添加Rifle所在仓库
-         maven { url 'https://dl.bintray.com/wangduanqing/cosmos/' }
+         maven { url 'https://cosmos1602.bintray.com/cosmos/' }
     }
 }
 ```
@@ -117,7 +117,7 @@ allprojects {
 ```
 buildscript {
     dependencies {
-        classpath 'com.mm.rifle:plugin:1.3.5'
+        classpath 'com.cosmos.rifle:plugin:1.3.5'
     }
 }
 ```
