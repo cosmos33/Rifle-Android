@@ -37,44 +37,13 @@ Rifle在Crash发生的时候会回调给业务层，可以通过如下方式监�
 ```
 UserStrategy userStrategy = new UserStrategy.Builder()
         .crashCallback(new CrashCallback() {
-            @Override
-            public void onRifleCrash(Throwable throwable) {
-                super.onRifleCrash(throwable);
-                // Rifle内部发生Crash
-            }
-
+            
             @Override
             public void onCrashStart(CrashType crashType, String errorStack) {
                 super.onCrashStart(crashType, errorStack);
-                // Rifle捕获到Crash时（开始处理Crash）
+                // Rifle捕获到Crash时（开始处理Crash），请不要在此方法中执行耗时操作
             }
 
-            @Override
-            public void onCrashSaved(boolean success) {
-                super.onCrashSaved(success);
-                // Rifle将捕获到的Crash保存好
-            }
-
-            @Override
-            public void onUploadResponse(UploadType uploadType) {
-                super.onUploadResponse(uploadType);
-                // Rifle将捕获到的Crash提交到服务器之后
-            }
-            
-            /**
-             * 提交crash成功
-             * @param versionCode app编号
-             */
-            public void onUploadSuccess(String versionCode) {
-                    super.onUploadResponse(uploadType);
-             // 提交crash成功
-            }
-
-            @Override
-            public void onCrashHandle(long costTimeMillis) {
-                super.onCrashHandle(costTimeMillis);
-                // Rifle将捕获到的Crash处理完之后（完成Crash处理）
-            }
         })
         .build();
 ```
@@ -96,6 +65,46 @@ RifleLog.w(tag, msg);
 RifleLog.e(tag, msg);
 ```
 
+### 主动上报异常
+主动上报异常功能，是为了方便业务排查问题而设计的
+
+对Android开发来说，可以通过try catch捕获异常，如果认为此异常为不正常现象，可以在catch代码块中上报此异常信息：
+
+```
+Rifle.reportException(throwable);
+```
+
+当然如果你知道异常发生的线程信息，可以用以下方法上报：
+
+```
+Rifle.reportException(throwable, happenThread);
+```
+
+如果异常信息不是一个`Throwable`对象时，业务可以自定义一个异常信息，来上报：
+
+```
+Rifle.reportException(rifleException);
+```
+`RifleException`类，可以定义以下几个属性
+
+| 属性名称 | 说明 | 类型 |
+| ------ | ------ | ------ |
+| category | 异常分类 | RifleExceptionType |
+| name| 异常名称 |string |
+| reason| 异常原因 |string |
+| callStack| 调用栈 | string[] |
+
+业务层自行定义异常信息，`RifleExceptionType`包含如下几种类型：
+
+```
+public enum RifleExceptionType {
+    JAVA(1),
+    C_SHARP(2),
+    JS(3),
+    LUA(4),
+    OTHER(5);
+}
+```
 
 ### 设置日志输出实现
 Rifle默认通过Android的`Log`类来讲日志输出到控制台，业务可以自行对日志的输出做实现：

@@ -19,4 +19,11 @@
         android:layout_height="wrap_content"
         android:text="Native-Crash"/>
 
+
+    <Button
+        android:id="@+id/report_exception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report-Exception"/>
+
 </LinearLayout>

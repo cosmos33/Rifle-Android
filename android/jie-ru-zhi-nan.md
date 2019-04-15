@@ -2,7 +2,11 @@
 
 ---
 
-## 库文件
+## 通过Gradle集成
+
+### 添加仓库地址
+Rifle支持[JCenter仓库](http://jcenter.bintray.com/com/cosmos/rifle/)
+
 目前，Rifle支持Java和Native两种Crash收集，为了减少SDK对包大小的占用，分成两个库。
 
 如果只收集`Java Crash`，引入SDK即可：
@@ -15,28 +19,12 @@
 
 > 引入NDK，必须先引入SDK
 
-## 通过maven集成
-
-### 添加仓库地址
-在Project的build中添加：
-
-```
-buildscript {
-    repositories {
-        // 添加Rifle所在仓库
-         maven { url 'https://cosmos1602.bintray.com/cosmos/' }
-    }
-}
-```
-
-![maven_1](./images/maven_1.png)
-
 ### 只集成SDK
 在Module的build.gradle文件中添加依赖和属性配置：
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.6.3'
+    compile 'com.cosmos.rifle:core:1.6.5'
 }
 ```
 
@@ -45,7 +33,7 @@ dependencies {
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.6.3'
+    compile 'com.cosmos.rifle:core:1.6.5'
     compile 'com.cosmos.rifle:native:1.1.0'     // 收集native crash需要用到的NDK
 }
 ```
