@@ -87,18 +87,6 @@ implementation ('com.cosmos.rifle:native:1.1.0') {
 -keep class com.mm.rifle.**{*;}
 ```
 
-### 添加插件仓库地址
-在Project的build中添加：
-
-```
-allprojects {
-    repositories {
-        // 添加Rifle所在仓库
-         maven { url 'https://cosmos1602.bintray.com/cosmos/' }
-    }
-}
-```
-
 ### 添加插件依赖
 在Project的build.gradle下面添加编译期依赖：
 
