@@ -50,7 +50,6 @@ android {
     }
 }
 ```
-![dependencies](./images/dependencies.png)
 
 #### 集成NDK时可能碰到的情况
 - **情况一：**
@@ -98,7 +97,6 @@ buildscript {
 }
 ```
 
-![plugin_maven](./images/plugin_maven.png)
 
 ### 应用插件
 在Module的build.gradle文件中应用插件：
