@@ -24,7 +24,7 @@ Rifle支持[JCenter仓库](http://jcenter.bintray.com/com/cosmos/rifle/)
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.7.0'
+    compile 'com.cosmos.rifle:core:1.7.1'
 }
 ```
 
@@ -33,7 +33,7 @@ dependencies {
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.7.0'
+    compile 'com.cosmos.rifle:core:1.7.1'
     compile 'com.cosmos.rifle:native:1.1.0'     // 收集native crash需要用到的NDK
 }
 ```
