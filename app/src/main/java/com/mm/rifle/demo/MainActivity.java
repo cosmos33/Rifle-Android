@@ -6,15 +6,13 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.os.Process;
 import android.view.View;
 import android.widget.Button;
 
 import com.mm.rifle.Rifle;
-import com.mm.rifle.RifleException;
-import com.mm.rifle.RifleExceptionType;
+import com.mm.rifle.exception.RifleException;
+import com.mm.rifle.exception.RifleExceptionType;
 
 public class MainActivity extends Activity {
 
