@@ -20,6 +20,12 @@
 
 ### NDK更新日志
 
+**1.1.1 `2019-04-24`**
+
+- Native崩溃默认不采集除崩溃线程之外的其他线程堆栈，减小流量消耗
+
+[1.1.1下载地址](https://cosmos.momocdn.com/cosmospackage/77/E7/77E7968B-E6C4-CADB-A24D-8345F049B11520190424.aar)
+
 **1.1.0 `2019-04-3`**
 
 - 首次发布Rifle NDK，支持采集Native崩溃
@@ -43,7 +49,7 @@
 
 ### 上传带符号表SO脚本更新日志
 
-[使用指南](../jie-ru-zhi-nan.md#%E4%BD%BF%E7%94%A8%E4%B8%8A%E4%BC%A0%E7%AC%A6%E5%8F%B7so%E8%84%9A%E6%9C%AC)
+[提交带符号表脚本使用指南](../jie-ru-zhi-nan.md#%E4%BD%BF%E7%94%A8%E4%B8%8A%E4%BC%A0%E7%AC%A6%E5%8F%B7so%E8%84%9A%E6%9C%AC)
 
 **`2019-04-10`**
 - 内容：修复提交失败问题

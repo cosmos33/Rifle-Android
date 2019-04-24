@@ -34,7 +34,7 @@ dependencies {
 ```
 dependencies {
     compile 'com.cosmos.rifle:core:1.7.1'
-    compile 'com.cosmos.rifle:native:1.1.0'     // 收集native crash需要用到的NDK
+    compile 'com.cosmos.rifle:native:1.1.1'     // 收集native crash需要用到的NDK
 }
 ```
 
@@ -70,7 +70,7 @@ android {
 则对NDK的依赖方式改成如下格式：
 
 ```
-implementation ('com.cosmos.rifle:native:1.1.0') {
+implementation ('com.cosmos.rifle:native:1.1.1') {
     exclude group: 'com.cosmos.baseutil', module: 'cpp_shared'
 }
 ```
