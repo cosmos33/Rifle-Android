@@ -54,7 +54,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.cosmos.rifle:core:1.7.1'            // rifle的基础库，包含java崩溃收集，以及核心代码
+    implementation 'com.cosmos.rifle:core:1.7.2'            // rifle的基础库，包含java崩溃收集，以及核心代码
     implementation 'com.cosmos.rifle:native:1.1.1'          // 如果想要监控native崩溃，需要加入这个（so文件）
 
     /*
