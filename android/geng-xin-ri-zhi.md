@@ -3,9 +3,9 @@
 
 **1.7.2 `2019-04-24`**
 
-- 支持打开Native崩溃采集所有线程调用栈接口
+- 支持打开/关闭Native崩溃其他线程堆栈信息采集（默认打开）
 
-[1.7.2下载地址](https://cosmos.momocdn.com/cosmospackage/31/A0/31A06453-29F9-624E-53CE-EE5C40FF47AA20190424.aar)
+[1.7.2下载地址](https://cosmos.momocdn.com/cosmospackage/AB/F8/ABF89451-5EF2-1D0B-69B3-E0F6086C4D4B20190424.aar)
 
 **1.7.1 `2019-04-18`**
 
@@ -29,9 +29,10 @@
 
 **1.1.1 `2019-04-24`**
 
-- Native崩溃默认不采集除崩溃线程之外的其他线程堆栈，减小流量消耗
+- 优化Native崩溃堆栈文件大小，减少流量消耗
+- 支持关闭Native其他线程堆栈信息采集，减少流量消耗（默认打开）
 
-[1.1.1下载地址](https://cosmos.momocdn.com/cosmospackage/77/E7/77E7968B-E6C4-CADB-A24D-8345F049B11520190424.aar)
+[1.1.1下载地址](https://cosmos.momocdn.com/cosmospackage/A9/5C/A95C2181-8E81-48B8-AD6B-F824CC47D95920190424.aar)
 
 **1.1.0 `2019-04-3`**
 

@@ -21,7 +21,7 @@ UserStrategy userStrategy = new UserStrategy.Builder()
                 .enableNativeCollector(true) // 打开/关闭Native Crash收集（前提是集成NDK）
                 .libraryLoader()   // 设置SO库加载实现对象（比如ReLinker对低端机的支持）
                 .consumeCrash(false) // 是否消费Crash，消费之后，其他Crash收集平台将无法采集到Crash，默认为false
-                .nativePrintOtherThread(false)  // Native崩溃是否需要采集除崩溃线程之外的其他线程调用栈信息，默认为false，打开后会增加流量消息
+                .nativePrintOtherThread(false)  // Native崩溃是否需要采集除崩溃线程之外的其他线程调用栈信息，默认为true，设置为false能减少流量消耗
                 .build();
 ```
 
