@@ -60,7 +60,7 @@ dependencies {
     /*
     // 如果编译时出现提示：More than one file was found with OS independent path 'lib/armeabi/libc++_shared.so'
     // 则用下面这个方式引入NDK
-    implementation ('com.mm.rifle:native:1.1.0') {
+    implementation ('com.mm.rifle:native:1.1.1') {
         exclude group: 'com.mm.baseutil', module: 'cpp_shared'
     }
     */

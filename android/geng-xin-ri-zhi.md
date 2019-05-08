@@ -42,6 +42,13 @@
 
 ### Gradle插件更新日志
 
+**1.3.8 `2019-05-08`**
+
+- 兼容Gradle 3.4.0版本
+- 去除打包时，未找到mapping直接终止打包的逻辑
+
+[1.3.8下载地址](https://cosmos.momocdn.com/cosmospackage/59/20/5920956B-F6E1-BF9D-1E3F-A1EE9A11B05E20190508.zip)
+
 **1.3.6 `2019-04-19`**
 
 - 限制插件必须传入`versionName`, `appId`,`appKey`三个参数
@@ -59,9 +66,14 @@
 
 [提交带符号表脚本使用指南](../jie-ru-zhi-nan.md#%E4%BD%BF%E7%94%A8%E4%B8%8A%E4%BC%A0%E7%AC%A6%E5%8F%B7so%E8%84%9A%E6%9C%AC)
 
+**`2019-05-8`**
+- 内容：修复提交失败问题
+
+[2019-05-8版本下载链接](https://cosmos.momocdn.com/cosmospackage/CE/D5/CED529C9-A6A4-A069-EDE1-0DD24AA3989A20190508.zip)
+
 **`2019-04-10`**
 - 内容：修复提交失败问题
 
-[下载链接](https://cosmos.momocdn.com/cosmosdocs/00/22/0022A709-EC52-E808-5BA7-169FE4ACA33520190410.zip)
+[2019-04-10版本下载链接](https://cosmos.momocdn.com/cosmosdocs/00/22/0022A709-EC52-E808-5BA7-169FE4ACA33520190410.zip)
 
 
