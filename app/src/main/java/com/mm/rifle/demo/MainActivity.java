@@ -70,7 +70,9 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Rifle.reportException(new RuntimeException("测试一个异常上报"));
-                Rifle.reportException(new RifleException(RifleExceptionType.JAVA));
+                Rifle.reportException(new RifleException.Builder(RifleExceptionType.JS)
+                        .callStack(new String[]{"js.js.js.js", "ha.ha.ha.ha"})
+                        .build());
             }
         });
 
