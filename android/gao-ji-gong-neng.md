@@ -107,6 +107,20 @@ public enum RifleExceptionType {
 }
 ```
 
+`RifleException`创建方式：
+
+```
+new RifleException.Builder(RifleExceptionType.JAVA)
+        .name("异常名称name")
+        .reason("异常原因reason")
+        .callStack(new String[]{
+                "调用栈第一行"
+                "调用栈第二行",
+                "调用栈第三行",
+        })
+        .build();
+```
+
 ### 设置日志输出实现
 Rifle默认通过Android的`Log`类来讲日志输出到控制台，业务可以自行对日志的输出做实现：
 
