@@ -114,7 +114,7 @@ new RifleException.Builder(RifleExceptionType.JAVA)
         .name("异常名称name")
         .reason("异常原因reason")
         .callStack(new String[]{
-                "调用栈第一行"
+                "调用栈第一行",
                 "调用栈第二行",
                 "调用栈第三行",
         })
