@@ -1,5 +1,11 @@
 ### SDK更新日志
 
+**1.7.4 `2019-05-15`**
+
+- 修复主动上报异常，name和reason一样的bug
+
+[1.7.4下载地址](https://cosmos.momocdn.com/cosmospackage/C2/9E/C29E652C-91C0-39BB-0DAB-B0E91AE1404720190515.zip)
+
 **1.7.3 `2019-05-10`**
 
 - 修复主动上报异常，后台数据不对的bug
