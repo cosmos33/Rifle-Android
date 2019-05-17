@@ -1,5 +1,11 @@
 ### SDK更新日志
 
+**1.7.5 `2019-05-15`**
+
+- 修复崩溃采集未自动打开的bug
+
+[1.7.5下载地址](https://cosmos.momocdn.com/cosmospackage/6D/A8/6DA87BFB-C4BD-5DE6-32E3-32C17C2A3EDF20190517.zip)
+
 **1.7.4 `2019-05-15`**
 
 - 修复主动上报异常，name和reason一样的bug
