@@ -1,5 +1,11 @@
 ### SDK更新日志
 
+**1.7.7 `2019-05-21`**
+
+- 修复StackOverFlow崩溃，堆栈太长导致后台无法打开的bug
+
+[1.7.7下载地址](https://cosmos.momocdn.com/cosmospackage/A5/2D/A52D5DD0-ED8D-B794-4CB8-C49076E46F9E20190521.zip)
+
 **1.7.5 `2019-05-15`**
 
 - 修复崩溃采集未自动打开的bug
