@@ -65,6 +65,13 @@
 
 ### Gradle插件更新日志
 
+**1.3.9 `2019-05-23`**
+
+- 兼容Gradle 3.4.0版本 assets 路径
+- 兼容productFlavors多渠道打包
+
+[1.3.9下载地址](https://cosmos.momocdn.com/cosmospackage/BA/08/BA08522E-FE76-A76C-FABF-7644C89DB24F20190523.zip)
+
 **1.3.8 `2019-05-08`**
 
 - 兼容Gradle 3.4.0版本
