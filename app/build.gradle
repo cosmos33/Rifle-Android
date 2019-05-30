@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'rifle.plugin'
 
 android {
     compileSdkVersion 28
@@ -67,7 +68,6 @@ dependencies {
 
 }
 
-apply plugin: 'rifle.plugin'
 rifleConfig {
     enable = true
     appId = "e2670a2e4b44b76adc262e51fc22b8d2"

@@ -65,6 +65,12 @@
 
 ### Gradle插件更新日志
 
+**1.4.0 `2019-05-30`**
+
+- 修复插件放置在android配置之前，无法正常提交mapping的bug
+
+[1.4.0下载地址](https://cosmos.momocdn.com/cosmospackage/FA/12/FA12BFC2-32D7-D4AF-026D-D17CD1779D1D20190530.zip)
+
 **1.3.9 `2019-05-23`**
 
 - 兼容Gradle 3.4.0版本 assets 路径

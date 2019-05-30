@@ -92,7 +92,7 @@ implementation ('com.cosmos.rifle:native:1.1.1') {
 ```
 buildscript {
     dependencies {
-        classpath 'com.cosmos.rifle:plugin:1.3.9'
+        classpath 'com.cosmos.rifle:plugin:1.4.0'
     }
 }
 ```
