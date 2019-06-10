@@ -1,5 +1,11 @@
 ### SDK更新日志
 
+**1.8.1 `2019-06-10`**
+
+- 修复Native崩溃在获取java线程堆栈的时候失败，导致部分native崩溃无法采集到的bug
+
+[1.8.1下载地址](https://cosmos.momocdn.com/cosmospackage/A8/7C/A87CD096-7DA6-4CED-33DE-21D2E176DC6420190610.zip)
+
 **1.7.7 `2019-05-21`**
 
 - 修复StackOverFlow崩溃，堆栈太长导致后台无法打开的bug

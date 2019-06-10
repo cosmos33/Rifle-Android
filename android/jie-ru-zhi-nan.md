@@ -33,7 +33,7 @@ dependencies {
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.7.7'
+    compile 'com.cosmos.rifle:core:1.8.1'
     compile 'com.cosmos.rifle:native:1.1.1'     // 收集native crash需要用到的NDK
 }
 ```
