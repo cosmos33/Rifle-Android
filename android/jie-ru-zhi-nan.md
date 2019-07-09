@@ -92,7 +92,7 @@ implementation ('com.cosmos.rifle:native:1.1.1') {
 ```
 buildscript {
     dependencies {
-        classpath 'com.cosmos.rifle:plugin:1.4.0'
+        classpath 'com.cosmos.rifle:plugin:1.4.1'
     }
 }
 ```
@@ -111,7 +111,6 @@ rifleConfig {
     // symbolsDir = "src/main/obj"        // 带符号表SO文件所在目录（默认为"src/main/obj"）
     // enableSymbolsUpload = true         // 打开/关闭提交带符号表SO的功能（默认为true）
     // waitingSymbolsUpload = true      // 打包完成后需要确认符号表文件是否提交完成，未完成需要等待提交完成。默认true
-    // abortWhileUploadMappingFailed = true   // 当提交mapping失败时，是否需要中断打包，默认为true
 }
 ```
 

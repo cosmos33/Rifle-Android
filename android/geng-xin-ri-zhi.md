@@ -77,6 +77,12 @@
 
 ### Gradle插件更新日志
 
+**1.4.1 `2019-06-09`**
+
+- 添加插件提交mapping失败时的提示信息，方便定位问题
+
+[1.4.1下载地址](https://cosmos.momocdn.com/cosmospackage/1E/CE/1ECE2BAD-F880-9F30-BA48-D51548D120B120190709.zip)
+
 **1.4.0 `2019-05-30`**
 
 - 修复插件放置在android配置之前，无法正常提交mapping的bug
