@@ -1,5 +1,11 @@
 ### SDK更新日志
 
+**1.8.3 `2019-08-1`**
+
+- 修复判断手机是否root时弹出权限请求窗口的bug
+
+[1.8.3下载地址](https://cosmos.momocdn.com/cosmospackage/96/7C/967CC5B5-1696-4EF3-C123-490FD99244BE20190801.aar)
+
 **1.8.2 `2019-06-21`**
 
 - 业务层日志输出保留500条（原先1000条）
@@ -61,6 +67,12 @@
 [1.6.4下载地址](https://cosmos.momocdn.com/cosmospackage/E5/64/E5645E91-C5A3-64F6-51B6-FC26556AFF0520190422.aar)
 
 ### NDK更新日志
+
+**1.1.3 `2019-08-1`**
+
+- Native线程的崩溃显示线程名称
+
+[1.1.3下载地址](https://cosmos.momocdn.com/cosmospackage/D8/16/D816F374-98FE-7212-3113-AC26FB9EFF8220190801.aar)
 
 **1.1.1 `2019-04-24`**
 
