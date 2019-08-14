@@ -24,7 +24,7 @@ Rifle支持[JCenter仓库](http://jcenter.bintray.com/com/cosmos/rifle/)
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.8.3'
+    compile 'com.cosmos.rifle:core:1.8.5'
 }
 ```
 
@@ -33,8 +33,8 @@ dependencies {
 
 ```
 dependencies {
-    compile 'com.cosmos.rifle:core:1.8.3'
-    compile 'com.cosmos.rifle:native:1.1.3'     // 收集native crash需要用到的NDK
+    compile 'com.cosmos.rifle:core:1.8.5'
+    compile 'com.cosmos.rifle:native:1.1.4'     // 收集native crash需要用到的NDK
 }
 ```
 
@@ -70,7 +70,7 @@ android {
 则对NDK的依赖方式改成如下格式：
 
 ```
-implementation ('com.cosmos.rifle:native:1.1.3') {
+implementation ('com.cosmos.rifle:native:1.1.4') {
     exclude group: 'com.cosmos.baseutil', module: 'cpp_shared'
 }
 ```

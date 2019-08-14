@@ -54,14 +54,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'com.cosmos.rifle:core:1.8.3'            // rifle的基础库，包含java崩溃收集，以及核心代码
-    implementation 'com.cosmos.rifle:native:1.1.3'          // 如果想要监控native崩溃，需要加入这个（so文件）
+    implementation 'com.cosmos.rifle:core:1.8.5'            // rifle的基础库，包含java崩溃收集，以及核心代码
+    implementation 'com.cosmos.rifle:native:1.1.4'          // 如果想要监控native崩溃，需要加入这个（so文件）
 
     /*
     // 如果编译时出现提示：More than one file was found with OS independent path 'lib/armeabi/libc++_shared.so'
     // 则用下面这个方式引入NDK
-    implementation ('com.mm.rifle:native:1.1.3') {
+    implementation ('com.mm.rifle:native:1.1.4') {
         exclude group: 'com.mm.baseutil', module: 'cpp_shared'
     }
     */
